@@ -1,0 +1,32 @@
+{{#if error}}
+<p>{{error}}</p>
+{{/if}}
+<header>
+    <h2>Chat-App</h2>
+</header>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="boxBx mt-5">
+                    <div class="container p-5">
+                        <p>We have send an verificaion code</p>
+                        <form action="/step3" method="post">
+                            <input type="hidden" name="id" value="{{id}}">
+                            <input type="text" name="token" class="form-control" placeholder="             O   T   P    ">
+                            <div class="container mt-3">
+                                <div class="row">
+                                    <input type="submit" value="Check code" style="background-color: darkturquoise;padding:6px;border:none;color:white">
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    </div>
+</section>

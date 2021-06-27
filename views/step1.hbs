@@ -1,0 +1,33 @@
+{{#if error}}
+<P>Error</P>
+{{/if}}
+<header>
+    <h2>Chat-App</h2>
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="boxBx mt-5">
+                    <div class="container p-5">
+                        <h3>Create Account</h3>
+                        <div class="row">
+                        <p>Please enter your phone number with +91</p>
+                        <form action="/step2" method="post">
+                            <input type="tel" name="number" class="form-control" placeholder="Enter Mobile number"><br>
+                            <div class="container">
+                                <div class="row">
+                                <input type="submit" value="Send Code" style="background-color: darkturquoise;padding:6px;border:none;color:white">
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</section>
+</form>
